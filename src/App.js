@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ListSensorComponent from './components/ListSensorComponent';
 
 function App() {
@@ -8,10 +8,10 @@ function App() {
       <Router>
         {/* Header */}
         <div className= "container" >
-          <Switch>
+          <Routes>
             <Route exact path = "/" component = {ListSensorComponent}></Route>
             <Route path = "/sensors" component = {ListSensorComponent}></Route>
-          </Switch>
+          </Routes>
           <ListSensorComponent/>
         </div>
         
