@@ -26,6 +26,7 @@ const ListSensorComponent = () => {
                 <th> Pi Id </th>
                 <th> Sensor Id </th>
                 <th> Sensor Status </th>
+                <th> Timestamp </th>
             </thead>
             <tbody>
                 {
@@ -36,6 +37,7 @@ const ListSensorComponent = () => {
                             <td> {sensor.piId} </td>
                             <td> {sensor.sensorId} </td>
                             <td> {sensor.status} </td>
+                            <td> {sensor.timestamp} </td>
                         </tr>
                     )
                 }
